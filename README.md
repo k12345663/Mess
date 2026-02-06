@@ -37,8 +37,13 @@ This project uses **Supabase** for the database and authentication.
     **Frontend:** Open `frontend/.env.local`
     ```env
     NEXT_PUBLIC_SUPABASE_URL=your-project-url
-    NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
     ```
+
+4.  **Setup Database**:
+    *   Open `supabase/migrations/20240205_initial_schema.sql` in this repo.
+    *   Copy the content.
+    *   Go to **Supabase Dashboard** -> **SQL Editor**.
+    *   Paste and click **Run**.
 
 ## 🚀 How to Run
 
