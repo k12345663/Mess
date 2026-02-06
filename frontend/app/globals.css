@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* OYO/Zomato-Inspired Design System */
+:root {
+  /* Primary - Coral Red (Zomato-inspired) */
+  --color-primary: #E23744;
+  --color-primary-hover: #CB2D3E;
+  --color-primary-light: #FFF0F1;
+
+  /* Secondary - Deep Teal */
+  --color-secondary: #1C1C1C;
+
+  /* Accent - Warm Orange (OYO-inspired) */
+  --color-accent: #EE4540;
+  --color-accent-light: #FFF4F3;
+
+  /* Success */
+  --color-success: #3AB757;
+  --color-success-light: #E8F8ED;
+
+  /* Neutrals */
+  --color-background: #F8F8F8;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #1C1C1C;
+  --color-text-secondary: #696969;
+  --color-text-muted: #9C9C9C;
+  --color-border: #E8E8E8;
+  --color-border-light: #F0F0F0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ============================================
+   BUTTON SYSTEM - OYO/Zomato Style
+   ============================================ */
+
+.btn-primary {
+  @apply px-6 py-3 font-semibold rounded-xl shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply active:scale-[0.98];
+  background: linear-gradient(135deg, #E23744 0%, #CB2D3E 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #CB2D3E 0%, #B22234 100%);
+  box-shadow: 0 8px 25px -5px rgba(226, 55, 68, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-primary:focus {
+  --tw-ring-color: #E23744;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-white text-gray-800 font-semibold rounded-xl;
+  @apply border-2 border-gray-200;
+  @apply hover:border-gray-300 hover:bg-gray-50;
+  @apply transition-all duration-200;
+  @apply active:scale-[0.98];
+}
+
+.btn-success {
+  @apply px-6 py-3 font-semibold rounded-xl shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply active:scale-[0.98];
+  background: linear-gradient(135deg, #3AB757 0%, #2D9045 100%);
+  color: white;
+}
+
+.btn-success:hover {
+  box-shadow: 0 8px 25px -5px rgba(58, 183, 87, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  @apply px-6 py-3 font-semibold rounded-xl shadow-sm;
+  @apply transition-all duration-300 ease-out;
+  @apply active:scale-[0.98];
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: white;
+}
+
+/* Icon Button */
+.btn-icon {
+  @apply p-3 rounded-xl bg-white border border-gray-200;
+  @apply hover:bg-gray-50 hover:border-gray-300;
+  @apply transition-all duration-200;
+  @apply active:scale-95;
+}
+
+/* ============================================
+   CARD SYSTEM - Modern Glass Effect
+   ============================================ */
+
+.card {
+  @apply bg-white rounded-2xl border border-gray-100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.card-flat {
+  @apply bg-white rounded-2xl border border-gray-100;
+  box-shadow: none;
+}
+
+.card-accent {
+  @apply bg-gradient-to-br from-red-500 to-red-600 rounded-2xl text-white;
+  box-shadow: 0 8px 30px -5px rgba(226, 55, 68, 0.35);
+}
+
+/* Glass Card */
+.card-glass {
+  @apply rounded-2xl border border-white/20;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ============================================
+   INPUT SYSTEM
+   ============================================ */
+
+.input-field {
+  @apply w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl bg-white;
+  @apply focus:border-red-500 focus:ring-0 outline-none;
+  @apply transition-all duration-200;
+  @apply placeholder:text-gray-400;
+}
+
+.input-field:hover {
+  @apply border-gray-300;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 4px rgba(226, 55, 68, 0.1);
+}
+
+/* Select Dropdown */
+.select-field {
+  @apply w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl bg-white;
+  @apply focus:border-red-500 focus:ring-0 outline-none;
+  @apply transition-all duration-200 appearance-none cursor-pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239CA3AF'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold text-gray-900 tracking-tight;
+}
+
+.section-subtitle {
+  @apply text-gray-500 mt-2 leading-relaxed text-base md:text-lg;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #E23744 0%, #EE4540 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+
+.badge {
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold;
+}
+
+.badge-success {
+  @apply bg-green-50 text-green-700;
+}
+
+.badge-warning {
+  @apply bg-amber-50 text-amber-700;
+}
+
+.badge-danger {
+  @apply bg-red-50 text-red-700;
+}
+
+.badge-info {
+  @apply bg-blue-50 text-blue-700;
+}
+
+.badge-live {
+  @apply bg-red-500 text-white;
+  animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* ============================================
+   MOBILE NAVIGATION
+   ============================================ */
+
+.mobile-nav {
+  @apply fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100;
+  @apply flex items-center justify-around py-2 px-4;
+  @apply md:hidden z-50;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-nav-item {
+  @apply flex flex-col items-center gap-1 py-2 px-4 rounded-xl;
+  @apply text-gray-500 transition-all duration-200;
+}
+
+.mobile-nav-item.active {
+  @apply text-red-600 bg-red-50;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+/* Stagger children */
+.stagger-children>* {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.stagger-children>*:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.stagger-children>*:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.stagger-children>*:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.stagger-children>*:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.stagger-children>*:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0);
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+@media (max-width: 768px) {
+  .mobile-full {
+    @apply w-full;
+  }
+
+  .mobile-stack {
+    @apply flex-col;
+  }
+
+  .mobile-hide {
+    @apply hidden;
+  }
+
+  .mobile-show {
+    @apply block;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-hide {
+    @apply hidden;
+  }
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+
+.skeleton {
+  @apply bg-gray-200 rounded animate-pulse;
+}
+
+.spinner {
+  @apply animate-spin rounded-full border-2 border-gray-200;
+  border-top-color: #E23744;
+}
