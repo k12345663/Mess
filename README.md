@@ -36,13 +36,25 @@ A modern, full-stack mess management application designed for hostels, featuring
 - Python 3.10+
 - Supabase Account
 
-### 1. Backend Setup (Flask/FastAPI)
+## 🚀 Quick Start (Windows)
+
+**The easiest way to run the app:**
+1.  Double-click **`run_project.bat`** in the root folder.
+2.  That's it! It will install dependencies and start both servers automatically.
+
+---
+
+## 🛠️ Manual Setup Guide
+
+If you prefer running commands manually:
+
+### 1. Backend Setup (Python)
 ```bash
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
-*Server starts at http://localhost:8000*
+*Server running at http://localhost:8000*
 
 ### 2. Frontend Setup (Next.js)
 ```bash
@@ -50,7 +62,7 @@ cd frontend
 npm install
 npm run dev
 ```
-*App starts at http://localhost:3000*
+*App running at http://localhost:3000*
 
 ## 📁 Project Structure
 
