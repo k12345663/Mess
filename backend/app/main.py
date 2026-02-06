@@ -52,7 +52,7 @@ async def get_user_id(authorization: str = Header(None)) -> str:
 
 @app.get("/")
 def health_check():
-    return {"status": "ok", "service": "Mess Management System"}
+    return {"status": "ok", "service": "The Food Forge API"}
 
 # Import and include routers (to be created)
 from app.routes import menu, ops, reports
