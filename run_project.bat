@@ -1,6 +1,6 @@
 @echo off
 echo ==========================================
-echo    Mess Management System - Quick Start
+echo    The Food Forge - Quick Start
 echo ==========================================
 echo.
 

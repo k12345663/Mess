@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Indian Mess Management',
-    description: 'Smart Mess System',
+    title: "The Food Forge: The Taste Buds",
+    description: "Modern mess management system for hostels and canteens",
 };
 
 export default function RootLayout({

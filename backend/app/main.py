@@ -19,7 +19,7 @@ except Exception as e:
     print(f"Warning: Supabase client failed to initialize (Config missing?): {e}")
     supabase = None
 
-app = FastAPI(title="Mess Management System API")
+app = FastAPI(title="The Food Forge API")
 
 # CORS
 app.add_middleware(

@@ -3,8 +3,9 @@ import Link from 'next/link';
 export default function Navbar() {
     return (
         <nav className="w-full h-16 bg-white border-b border-gray-100 flex items-center justify-between px-6">
-            <Link href="/" className="font-bold text-xl text-gray-900">
-                Mess<span className="text-emerald-600">Apply</span>
+            <Link href="/" className="font-bold text-xl text-gray-900 flex items-center gap-2">
+                <span className="bg-red-600 text-white p-1 rounded-lg">FF</span>
+                <span>The Food <span className="text-red-600">Forge</span></span>
             </Link>
             <div className="flex items-center gap-6 text-sm">
                 <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">Home</Link>

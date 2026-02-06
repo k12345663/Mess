@@ -8,8 +8,9 @@ export default function Home() {
             {/* Navbar */}
             <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
                 <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-                    <Link href="/" className="font-bold text-xl text-gray-900">
-                        Mess<span className="text-red-600">Apply</span>
+                    <Link href="/" className="font-bold text-xl text-gray-900 flex items-center gap-2">
+                        <span className="bg-red-600 text-white p-1 rounded-lg">FF</span>
+                        <span>The Food <span className="text-red-600">Forge</span></span>
                     </Link>
                     <div className="hidden md:flex items-center gap-8 text-sm">
                         <Link href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</Link>
@@ -41,8 +42,8 @@ export default function Home() {
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                                Mess management,{' '}
-                                <span className="text-gradient">reimagined.</span>
+                                The Food Forge <br />
+                                <span className="bg-gradient-to-tr from-red-600 to-orange-500 bg-clip-text text-transparent">The Taste Buds</span>
                             </h1>
 
                             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-8 max-w-lg">
@@ -245,8 +246,8 @@ export default function Home() {
                 <div className="max-w-6xl mx-auto px-4 md:px-6">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="mb-4 md:mb-0">
-                            <span className="font-bold text-xl text-white">Mess<span className="text-red-500">Apply</span></span>
-                            <p className="text-sm mt-1">© 2026 MessApply. All rights reserved.</p>
+                            <span className="font-bold text-xl text-white">The Food <span className="text-red-500">Forge</span></span>
+                            <p className="text-sm mt-1">© 2026 The Food Forge. All rights reserved.</p>
                         </div>
                         <div className="flex gap-6 text-sm">
                             <Link href="/login" className="hover:text-white transition-colors">Login</Link>
