@@ -59,7 +59,7 @@ export default function AuthPage() {
                 <div className="relative">
                     <Link href="/" className="text-white text-2xl font-bold flex items-center gap-2">
                         <ArrowLeft className="w-5 h-5" />
-                        MessApply
+                        The Food Forge
                     </Link>
                 </div>
 
@@ -102,7 +102,7 @@ export default function AuthPage() {
                 </div>
 
                 <div className="relative text-white/60 text-sm">
-                    © 2026 MessApply. All rights reserved.
+                    © 2026 The Food Forge. All rights reserved.
                 </div>
             </div>
 
@@ -118,13 +118,13 @@ export default function AuthPage() {
                     {/* Header */}
                     <div className="mb-8">
                         <div className="lg:hidden mb-6">
-                            <span className="font-bold text-2xl text-gray-900">Mess<span className="text-red-600">Apply</span></span>
+                            <span className="font-bold text-2xl text-gray-900">The Food <span className="text-red-600">Forge</span></span>
                         </div>
                         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
                             {isLogin ? 'Welcome back!' : 'Create your account'}
                         </h1>
                         <p className="text-gray-500">
-                            {isLogin ? 'Enter your details to access your dashboard.' : 'Get started with MessApply today.'}
+                            {isLogin ? 'Enter your details to access your dashboard.' : 'Get started with The Food Forge today.'}
                         </p>
                     </div>
 

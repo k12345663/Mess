@@ -254,7 +254,7 @@ export default function AdminDashboard() {
                             <ChefHat className="w-8 h-8 text-red-600" />
                         </div>
                         <h1 className="text-2xl font-bold text-gray-900">Admin Login</h1>
-                        <p className="text-gray-500 mt-2">Mess Management System</p>
+                        <p className="text-gray-500 mt-2">The Food Forge System</p>
                     </div>
 
                     <form onSubmit={handleLogin} className="space-y-5">
@@ -340,7 +340,7 @@ export default function AdminDashboard() {
                 <div className="p-6">
                     <div className="flex items-center justify-between mb-8">
                         <Link href="/" className="font-bold text-xl text-gray-900">
-                            Mess<span className="text-red-600">Apply</span>
+                            The Food <span className="text-red-600">Forge</span>
                         </Link>
                         <button
                             onClick={() => setSidebarOpen(false)}

@@ -5,7 +5,7 @@ Modern mess management system for hostels and canteens, replacing paper coupons 
 ## 📁 Project Structure
 
 ```bash
-Mess Management/
+The Food Forge/
 ├── frontend/               # Next.js Application
 │   ├── app/               # App Router pages (Home, Login, Admin, Student)
 │   ├── components/        # Reusable UI components
